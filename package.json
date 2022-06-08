@@ -1,0 +1,92 @@
+{
+  	"name": "base64",
+	"displayName": "base64",
+	"description": "Plugin to encode/decode base64 data",
+	"version": "0.0.1",
+	"publisher": "m4ns0ur",
+	"license": "MIT",
+    "repository": {
+        "type": "git",
+        "url": "https://github.com/m4ns0ur/base64-vscode-plugin"
+    },
+	"engines": {
+		"vscode": "^1.65.0"
+	},
+	"categories": [
+		"Other"
+	],
+	"activationEvents": [
+        "onCommand:base64.encode",
+        "onCommand:base64.decode",
+        "onCommand:base64.hexEncode",
+        "onCommand:base64.hexDecode"
+	],
+	"main": "./out/extension.js",
+	"contributes": {
+		"commands": [
+			{
+				"command": "base64.encode",
+				"title": "base64 encode"
+			},
+			{
+				"command": "base64.decode",
+				"title": "base64 decode"
+			},
+			{
+				"command": "base64.hexEncode",
+				"title": "base64 hex encode"
+			},
+			{
+				"command": "base64.hexDecode",
+				"title": "base64 hex decode"
+			}
+		],
+		"keybindings": [
+			{
+				"command": "base64.encode",
+				"key": "ctrl+shift+6",
+				"mac": "cmd+shift+6",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "base64.decode",
+				"key": "ctrl+shift+7",
+				"mac": "cmd+shift+7",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "base64.hexEncode",
+				"key": "ctrl+shift+8",
+				"mac": "cmd+shift+8",
+				"when": "editorTextFocus"
+			},
+			{
+				"command": "base64.hexDecode",
+				"key": "ctrl+shift+9",
+				"mac": "cmd+shift+9",
+				"when": "editorTextFocus"
+			}
+		]
+	},
+	"scripts": {
+		"vscode:prepublish": "npm run compile",
+		"compile": "tsc -p ./",
+		"watch": "tsc -watch -p ./",
+		"pretest": "npm run compile && npm run lint",
+		"lint": "eslint src --ext ts",
+		"test": "node ./out/test/runTest.js"
+	},
+	"devDependencies": {
+		"@types/vscode": "^1.65.0",
+		"@types/glob": "^7.2.0",
+		"@types/mocha": "^9.1.0",
+		"@types/node": "14.x",
+		"@typescript-eslint/eslint-plugin": "^5.12.1",
+		"@typescript-eslint/parser": "^5.12.1",
+		"eslint": "^8.9.0",
+		"glob": "^7.2.0",
+		"mocha": "^9.2.1",
+		"typescript": "^4.5.5",
+		"@vscode/test-electron": "^2.1.2"
+	}
+}
