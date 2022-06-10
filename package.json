@@ -1,8 +1,8 @@
 {
   	"name": "base64",
-	"displayName": "base64",
+	"displayName": "Base64",
 	"description": "Plugin to encode/decode base64 data",
-	"version": "0.0.1",
+	"version": "0.0.2",
 	"publisher": "m4ns0ur",
 	"license": "MIT",
     "repository": {
@@ -15,6 +15,7 @@
 	"categories": [
 		"Other"
 	],
+	"icon": "images/icon.png",
 	"activationEvents": [
         "onCommand:base64.encode",
         "onCommand:base64.decode",
@@ -45,25 +46,25 @@
 			{
 				"command": "base64.encode",
 				"key": "ctrl+shift+6",
-				"mac": "cmd+shift+6",
+				"mac": "ctrl+cmd+6",
 				"when": "editorTextFocus"
 			},
 			{
 				"command": "base64.decode",
 				"key": "ctrl+shift+7",
-				"mac": "cmd+shift+7",
+				"mac": "ctrl+cmd+7",
 				"when": "editorTextFocus"
 			},
 			{
 				"command": "base64.hexEncode",
 				"key": "ctrl+shift+8",
-				"mac": "cmd+shift+8",
+				"mac": "ctrl+cmd+8",
 				"when": "editorTextFocus"
 			},
 			{
 				"command": "base64.hexDecode",
 				"key": "ctrl+shift+9",
-				"mac": "cmd+shift+9",
+				"mac": "ctrl+cmd+9",
 				"when": "editorTextFocus"
 			}
 		]
