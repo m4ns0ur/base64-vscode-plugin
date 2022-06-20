@@ -1,10 +1,10 @@
 # base64
 
-base64 is a vscode extension to encode/decode base64 data. It also supports hex to base64.
+base64 is a vscode extension to encode/decode Base64 data. It can encode multi-lines strings too (for instance JSON). It also supports Hex to Base64.
 
 ## Features
 
-You can select text and encode/decode to/from base64. Search in command pallete for base64 or use the key bindings.
+You can select text and encode/decode to/from Base64. Search in command pallete for base64 or use the key bindings. Multi-lines and Hex to Base64 is supported.
 
 ![screenshot1](images/screenshot1.png)
 ![screenshot2](images/screenshot2.png)
@@ -14,10 +14,10 @@ You can select text and encode/decode to/from base64. Search in command pallete 
 ## Key Bindings
 
 ```
-encode text to base64:  Ctrl+Shift+6 (Ctrl+Cmd+6 in Mac)
-decode base64 to text:  Ctrl+Shift+7 (Ctrl+Cmd+7 in Mac)
-encode hex to base64:   Ctrl+Shift+8 (Ctrl+Cmd+8 in Mac)
-decode base64 to hex:   Ctrl+Shift+9 (Ctrl+Cmd+9 in Mac)
+encode text to Base64:  Ctrl+Shift+6 (Ctrl+Cmd+6 in Mac)
+decode Base64 to text:  Ctrl+Shift+7 (Ctrl+Cmd+7 in Mac)
+encode Hex to Base64:   Ctrl+Shift+8 (Ctrl+Cmd+8 in Mac)
+decode Base64 to Hex:   Ctrl+Shift+9 (Ctrl+Cmd+9 in Mac)
 ```
 
 ## Release Notes
@@ -30,3 +30,7 @@ Initial release of base64
 
 - Adding icon to plugin
 - Better keybindings for Mac
+
+### 0.0.3
+
+Better description
