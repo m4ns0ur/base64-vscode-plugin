@@ -60,11 +60,11 @@ export function activate(context: vscode.ExtensionContext) {
 export function deactivate() {}
 
 export function getEncoded(word: string): string {
-	return Buffer.from(word, 'binary').toString('base64');
+	return Buffer.from(word, 'utf8').toString('base64');
 }
 
 export function getDecoded(word: string): string {
-	return Buffer.from(word, 'base64').toString('binary');
+	return Buffer.from(word, 'base64').toString('utf8');
 }
 
 export function getHexEncoded(word: string): string {

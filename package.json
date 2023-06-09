@@ -2,7 +2,7 @@
   	"name": "base64",
 	"displayName": "Base64",
 	"description": "Plugin to encode/decode Base64 data",
-	"version": "0.0.3",
+	"version": "0.0.4",
 	"publisher": "m4ns0ur",
 	"license": "MIT",
     "repository": {
