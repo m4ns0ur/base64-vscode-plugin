@@ -10,6 +10,7 @@ You can select text and encode/decode to/from Base64. Search in command palette 
 ![screenshot2](images/screenshot2.png)
 ![screenshot3](images/screenshot3.png)
 ![screenshot4](images/screenshot4.png)
+![screenshot5](images/screenshot5.png)
 
 ## Key Bindings
 
@@ -21,6 +22,11 @@ decode Base64 to Hex:   Ctrl+Shift+9 (Ctrl+Cmd+9 in Mac)
 ```
 
 ## Release Notes
+
+### 0.1.0
+
+- Add actions in context menu
+- Validate if text is selected
 
 ### 0.0.4
 

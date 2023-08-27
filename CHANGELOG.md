@@ -7,6 +7,13 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.1.0] - 2023-08-27
+
+### Added
+
+- Add actions in context menu
+- Validate if text is selected
+
 ## [0.0.4] - 2023-06-09
 
 ### Fixed
@@ -23,14 +30,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
-- Adding icon to plugin.
+- Adding icon to plugin
 
 ### Changed
 
-- Better keybindings for Mac.
+- Better keybindings for Mac
 
 ## [0.0.1] - 2022-06-08
 
 ### Added
 
-- Initial release of base64.
+- Initial release of base64

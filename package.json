@@ -2,7 +2,7 @@
   	"name": "base64",
 	"displayName": "Base64",
 	"description": "Plugin to encode/decode Base64 data",
-	"version": "0.0.4",
+	"version": "0.1.0",
 	"publisher": "m4ns0ur",
 	"license": "MIT",
     "repository": {
@@ -16,12 +16,7 @@
 		"Other"
 	],
 	"icon": "images/icon.png",
-	"activationEvents": [
-        "onCommand:base64.encode",
-        "onCommand:base64.decode",
-        "onCommand:base64.hexEncode",
-        "onCommand:base64.hexDecode"
-	],
+	"activationEvents": [],
 	"main": "./out/extension.js",
 	"contributes": {
 		"commands": [
@@ -66,6 +61,60 @@
 				"key": "ctrl+shift+9",
 				"mac": "ctrl+cmd+9",
 				"when": "editorTextFocus"
+			}
+		],
+		"menus": {
+			"commandPalette": [
+				{
+					"command": "base64.encode",
+					"when": "editorHasSelection"
+				},
+				{
+					"command": "base64.decode",
+					"when": "editorHasSelection"
+				},
+				{
+					"command": "base64.hexEncode",
+					"when": "editorHasSelection"
+				},
+				{
+					"command": "base64.hexDecode",
+				  "when": "editorHasSelection"
+				}
+			],
+			"editor/context": [
+				{
+					"submenu": "base64.submenu",
+					"group": "base64"
+				}
+			],
+			"base64.submenu": [
+				{
+					"command": "base64.encode",
+					"group": "main@1",
+					"when": "editorHasSelection"
+				},
+				{
+					"command": "base64.decode",
+					"group": "main@2",
+					"when": "editorHasSelection"
+				},
+				{
+					"command": "base64.hexEncode",
+					"group": "main@3",
+					"when": "editorHasSelection"
+				},
+				{
+					"command": "base64.hexDecode",
+					"group": "main@4",
+					"when": "editorHasSelection"
+				}
+			]
+		},
+		"submenus": [
+			{
+				"id": "base64.submenu",
+				"label": "Base64"
 			}
 		]
 	},
