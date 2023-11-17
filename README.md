@@ -15,13 +15,17 @@ You can select text and encode/decode to/from Base64. Search in command palette 
 ## Key Bindings
 
 ```
-encode text to Base64:  Ctrl+Shift+6 (Ctrl+Cmd+6 in Mac)
-decode Base64 to text:  Ctrl+Shift+7 (Ctrl+Cmd+7 in Mac)
-encode Hex to Base64:   Ctrl+Shift+8 (Ctrl+Cmd+8 in Mac)
-decode Base64 to Hex:   Ctrl+Shift+9 (Ctrl+Cmd+9 in Mac)
+encode text to Base64:  Ctrl+k Ctrl+4 (⌘+k ⌘+4 in Mac)
+decode Base64 to text:  Ctrl+k Ctrl+5 (⌘+k ⌘+5 in Mac)
+encode Hex to Base64:   Ctrl+k Ctrl+6 (⌘+k ⌘+6 in Mac)
+decode Base64 to Hex:   Ctrl+k Ctrl+7 (⌘+k ⌘+7 in Mac)
 ```
 
 ## Release Notes
+
+### 1.0.0
+
+Change keybindings to avoid conflict
 
 ### 0.1.0
 
